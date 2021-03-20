@@ -1,7 +1,7 @@
 name: string_ops
-description: A new Flutter package project.
 version: 0.0.1
-ing formatsauthor: Ben Baldwin
+description: An extension to the string class that simplifies common formatting requirements.
+repository: https://github.com/baldwin-design-co/string_ops
 
 environment:
   sdk: '>=2.10.0 <3.0.0'
