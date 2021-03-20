@@ -4,8 +4,11 @@ import 'package:string_ops/casing-formats.dart';
 import 'package:string_ops/get-segments.dart';
 import 'package:string_ops/segment-converters.dart';
 
+export 'casing-formats.dart';
+
 extension StringOps on String {
-  String convertCase(CasingFormat targetCase) {
+  /// Warning: this operation will remove all non-alpha-numeric characters
+  String convertCasing(CasingFormat targetCase) {
     final segments = getSegments(this);
 
     switch (targetCase) {
