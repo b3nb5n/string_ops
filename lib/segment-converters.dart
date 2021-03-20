@@ -20,7 +20,7 @@ List<String> titleCaseSegments(List<String> segments) {
   return segments;
 }
 
-List<String> camelCaseConverter(List<String> segments) {
+List<String> camelCaseSegments(List<String> segments) {
   segments = lowerCaseSegments(segments);
   for (var i = 1; i < segments.length; i++) {
     segments[i] = '${segments[i][0].toUpperCase()}${segments[i].substring(1)}';
