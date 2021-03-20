@@ -1,7 +1,6 @@
 List<String> getSegments(String input) {
-  final segmentPattern = RegExp(
-      '[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+');
+  final segmentPattern = RegExp(r'[a-z][^A-Z\s_-]+|[A-Z][a-z0-9]+|[^\s_-]+');
 
   final matches = segmentPattern.allMatches(input).toList();
-  return matches.map((match) => match.group(0));
+  return matches.map((match) => match.group(0)).toList();
 }

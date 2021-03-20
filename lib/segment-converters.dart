@@ -1,9 +1,9 @@
 List<String> lowerCaseSegments(List<String> segments) {
-  return segments.map((segment) => segment.toLowerCase());
+  return segments.map((segment) => segment.toLowerCase()).toList();
 }
 
 List<String> upperCaseSegments(List<String> segments) {
-  return segments.map((segment) => segment.toUpperCase());
+  return segments.map((segment) => segment.toUpperCase()).toList();
 }
 
 List<String> scentenceCaseSegments(List<String> segments) {
