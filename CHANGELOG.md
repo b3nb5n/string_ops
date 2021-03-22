@@ -1,3 +1,7 @@
-## [0.0.1] - TODO: Add release date.
+## [0.0.1] - March 20, 2021
 
-* TODO: Describe initial release.
+- Basic casing format conversion
+
+## [0.1.0] - March 21, 2021
+
+- Migrated to null safety
