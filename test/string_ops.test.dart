@@ -29,7 +29,7 @@ void main() {
           final inputString = formatExamples[inputFormat];
           final expectedOutput = formatExamples[outputFormat];
 
-          final result = inputString.convertCasing(outputFormat);
+          final result = inputString!.convertCasing(outputFormat);
           expect(result, expectedOutput);
         });
       });
